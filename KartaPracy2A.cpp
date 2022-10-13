@@ -37,4 +37,52 @@ int main()
         else if (b == c) cout<<"Rowne liczby to 'Liczba2' i 'Liczba3'";
     }
     else cout<<"NIE, nie ma rownych";
+
+     //zad4
+    cout<<endl<<"ZADANIE 4"<<endl;
+    cout<<"Liczba1: ";  cin>>a;
+    cout<<"Liczba2: ";  cin>>b;
+    cout<<"Liczba3: ";  cin>>c;
+    cout<<"Liczba4: ";  cin>>d;
+    if (a < b && a < c && a < d) cout<<"Najmniejsza liczba to "<<a;
+    else if (b < a && b < c && b < d) cout<<"Najmniejsza liczba to "<<b;
+    else if (c < b && c < a && c < d) cout<<"Najmniejsza liczba to "<<c;
+    else if (d < b && d < c && d < a) cout<<"Najmniejsza liczba to "<<d;
+    else cout<<"Sa przynajmniej dwie najmniejsze liczby";
+
+    //zad5
+    cout<<endl<<"ZADANIE 5"<<endl;
+    cout<<"Liczba1: ";  cin>>a;
+    cout<<"Liczba2: ";  cin>>b;
+    cout<<"Liczba3: ";  cin>>c;
+    if (b - c < a && a < b + c || a - c < b && b < a + c || a - b < c && c < a + b)
+    {
+        cout<<"TAK, liczby spelniaja nierownosc trojkata";
+    }
+    else cout<<"NIE, liczby nie spelniaja nierownosci trojkata";
+
+    //zad6
+    //za takie rzeczy kocham C++
+    cout<<endl<<"ZADANIE 6"<<endl;
+    cout<<"Liczba1: ";  cin>>a;
+    cout<<"Liczba2: ";  cin>>b;
+    cout<<"Liczba3: ";  cin>>c;
+    if (a < b + c && b < a + c && c < a + b)
+    {
+        cout<<"Trojkat powstanie, ";
+        if (a*a + b*b == c*c || b*b + c*c == a*a || c*c + a*a == b*b)
+        {
+            cout<<"bedzie to trojkat prostokatny";
+        }
+        else if (a*a + b*b < c*c || b*b + c*c < a*a || c*c + a*a < b*b)
+        {
+            cout<<"bedzie to trojkat rozwartokatny";
+        }
+        else if (a*a + b*b > c*c || b*b + c*c > a*a || c*c + a*a > b*b)
+        {
+            cout<<"bedzie to trojkat ostrokatny";
+        }
+    }
+    else cout<<"Trojkat nie powstanie";
+
 }
